@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Solspace (SOLP) – Whitepaper</title>
+<title>Solspace – Whitepaper</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: radial-gradient(circle at top, #0b1a3a, #050814);
-  color: #e6f2ff;
+  color: #ffffff;
 }
 
 .container {
@@ -25,79 +25,71 @@ body {
 }
 
 .header h1 {
-  margin: 0;
   font-size: 36px;
-}
-
-.header p {
-  margin-top: 8px;
-  color: #9bb7ff;
-}
-
-.banner {
-  margin: 30px 0;
-  padding: 28px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #0f2a66, #0a1c3f);
-  text-align: center;
-  box-shadow: 0 0 40px rgba(0,0,0,0.5);
-}
-
-.banner h2 {
-  margin: 0;
-  color: #2cffb3;
-  font-size: 22px;
-}
-
-.banner p {
-  margin: 12px 0 20px;
-  font-size: 15px;
-  color: #dce6ff;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  background: linear-gradient(135deg, #2cffb3, #00ffa3);
-  color: #001a12;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 14px;
-  text-decoration: none;
-  box-shadow: 0 0 24px rgba(44,255,179,0.5);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 36px rgba(44,255,179,0.8);
-}
-
-.section {
-  margin-top: 40px;
-  padding: 24px;
-  background: rgba(10,20,60,0.55);
-  border-radius: 16px;
-}
-
-.section h3 {
-  margin-top: 0;
-  color: #2cffb3;
-}
-
-.section ul {
-  padding-left: 18px;
-}
-
-.section li {
   margin-bottom: 8px;
 }
 
-.footer {
-  margin: 60px 0 20px;
+.header p {
+  opacity: 0.8;
+}
+
+.banner {
+  background: linear-gradient(135deg, #0f2a6b, #0b1a3a);
+  border-radius: 16px;
+  padding: 32px;
   text-align: center;
-  font-size: 13px;
-  color: #7f9cff;
+  margin-bottom: 40px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.banner h2 {
+  color: #2cffb3;
+  margin-bottom: 12px;
+}
+
+.banner p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.banner a {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #2cffb3;
+  color: #000;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.banner a:hover {
+  opacity: 0.9;
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h3 {
+  color: #2cffb3;
+  margin-bottom: 10px;
+}
+
+.section p, .section li {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+ul {
+  padding-left: 20px;
 }
 </style>
 </head>
@@ -115,24 +107,22 @@ body {
     <h2>🚀 SOLSPACE IS COMING</h2>
     <p>SOLP token is live. The Solspace game is being built by the community.</p>
 
-    <!-- 🔽 LINK VÀO GAME – ĐỔI URL NẾU CẦN -->
-    <a href="https://solspace-backend-i089.onrender.com" class="cta-btn">
+    <a href="https://superai111.github.io/solspace/" target="_blank">
       ▶ Enter Solspace Game
     </a>
+
+    <div class="note">
+      (The game is still under active development)
+    </div>
   </div>
 
   <div class="section">
     <h3>1. Overview</h3>
     <p>
       Solspace is an on-chain gaming protocol built on Solana, starting with a
-      multiplier-based game inspired by the “crash” genre.
-      The project explores a community-owned game model where players, builders,
-      and early supporters participate in shaping and growing the ecosystem
-      through the native SOLP token.
-    </p>
-    <p>
-      SOLP is designed as a governance and coordination token representing early
-      participation in Solspace.
+      multiplier-based game inspired by the “crash” genre. The project explores
+      a community-owned game model where players, builders, and early supporters
+      participate in shaping and growing the ecosystem through the native SOLP token.
     </p>
   </div>
 
@@ -146,7 +136,7 @@ body {
     </ul>
     <p>
       The long-term vision is a game protocol guided by its ecosystem rather than
-      a single entity.
+      a single centralized entity.
     </p>
   </div>
 
@@ -156,7 +146,7 @@ body {
       <li>High throughput suitable for real-time games</li>
       <li>Low transaction costs</li>
       <li>Rich wallet ecosystem (Phantom, Solflare, Backpack)</li>
-      <li>Strong on-chain and off-chain tooling</li>
+      <li>Strong tooling for on-chain and off-chain development</li>
     </ul>
   </div>
 
@@ -175,59 +165,38 @@ body {
   </div>
 
   <div class="section">
-    <h3>5. SOLP Token</h3>
+    <h3>5. Token SOLP</h3>
     <p>
-      SOLP serves as the native token of the Solspace ecosystem, enabling
-      governance, coordination, and future incentive mechanisms.
+      SOLP is the native token of the Solspace ecosystem, designed primarily for
+      governance, coordination, and representing early participation.
     </p>
   </div>
 
   <div class="section">
     <h3>6. Tokenomics</h3>
     <ul>
-      <li>Token name: Solspace Token</li>
+      <li>Token Name: Solspace Token</li>
       <li>Symbol: SOLP</li>
-      <li>Total supply: 1,000,000,000</li>
+      <li>Total Supply: 1,000,000,000</li>
     </ul>
   </div>
 
   <div class="section">
-    <h3>7. Governance</h3>
-    <p>
-      Governance will evolve in stages, from core team execution to community
-      signaling and eventually on-chain or off-chain voting.
-    </p>
-  </div>
-
-  <div class="section">
-    <h3>8. Revenue & Sustainability</h3>
-    <p>
-      Solspace may generate revenue through game volume, platform fees, and
-      ecosystem integrations. Allocation of revenue will be governed by the
-      community once the protocol matures.
-    </p>
-  </div>
-
-  <div class="section">
-    <h3>9. Roadmap</h3>
+    <h3>7. Roadmap</h3>
     <ul>
       <li>Phase 1: Token launch & community building</li>
       <li>Phase 2: Alpha game release</li>
       <li>Phase 3: Public beta & governance testing</li>
-      <li>Phase 4: Expansion & decentralization</li>
+      <li>Phase 4: Expansion & progressive decentralization</li>
     </ul>
   </div>
 
   <div class="section">
-    <h3>10. Conclusion</h3>
+    <h3>8. Conclusion</h3>
     <p>
-      Solspace is an experiment in community-driven on-chain gaming.
-      SOLP represents belief in that journey.
+      Solspace represents an experiment in community-driven on-chain gaming.
+      SOLP represents belief in that long-term journey.
     </p>
-  </div>
-
-  <div class="footer">
-    © 2025 Solspace. All rights reserved.
   </div>
 
 </div>
